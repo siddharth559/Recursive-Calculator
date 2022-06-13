@@ -1,3 +1,4 @@
+//auther: Siddharth Acharya
 #include<stdio.h>
 
 //*c in parameter means the function takes address as argument
@@ -15,12 +16,6 @@ float calc(char *c);  //main calculator function
 char sym[] = "+-*/";
 
 int main(){
-    char a[] = "siddharth ";
-    char b[] = "acharya";
-    char *c = NULL;
-    c = concats(a,b);  //concats returns address of the returned array's first element
-    char *r = NULL;
-    r = removes(c,3); // checking
     char chk[15]; // sample "1-2+4";
     scanf("%s",chk);
     printf("calc is %f\n",calc(chk));
